@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Linkedin, Code, Briefcase } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-slate-800 via-blue-900 to-slate-800 dark:from-slate-900 dark:via-blue-950 dark:to-slate-900 text-white">
+    <footer className="bg-gradient-to-r from-gray-800 via-blue-900 to-gray-800 dark:from-black dark:via-gray-900 dark:to-black text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Personal Info */}
@@ -72,7 +72,7 @@ const Footer = () => {
             </div>
             <div className="mt-4 p-4 bg-white/5 rounded-lg backdrop-blur-sm">
               <img 
-                src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400" 
                 alt="AsquareTec Office"
                 className="w-full h-24 object-cover rounded-md"
               />

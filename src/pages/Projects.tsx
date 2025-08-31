@@ -67,14 +67,14 @@ const Projects = () => {
     : projects.filter(project => project.category === activeCategory);
 
   return (
-    <div className="pt-16 min-h-screen">
+    <div className="pt-16 min-h-screen bg-gray-50 dark:bg-gray-900">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-slate-900 dark:via-blue-900/20 dark:to-purple-900/20">
+      <section className="py-20 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-600 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up">
             My Projects
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed animate-fade-in-up delay-200">
             Explore my portfolio of web development projects showcasing expertise in 
             Magento 2, Laravel, and WordPress development.
           </p>
@@ -82,7 +82,7 @@ const Projects = () => {
       </section>
 
       {/* Category Filter */}
-      <section className="py-8 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
+      <section className="py-8 bg-white dark:bg-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-center gap-4">
             {categories.map((category) => (
@@ -92,7 +92,7 @@ const Projects = () => {
                 className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 ${
                   activeCategory === category
                     ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
-                    : 'bg-white/80 dark:bg-slate-700/80 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-600'
+                    : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                 }`}
               >
                 {category}
@@ -109,7 +109,7 @@ const Projects = () => {
             {filteredProjects.map((project, index) => (
               <div
                 key={project.id}
-                className="group bg-white/80 dark:bg-slate-700/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105 overflow-hidden"
+                className="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105 overflow-hidden animate-fade-in-up"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 {/* Project Image */}
@@ -121,7 +121,7 @@ const Projects = () => {
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t ${project.color} opacity-60 group-hover:opacity-40 transition-opacity duration-300`}></div>
                   <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 bg-white/90 dark:bg-slate-800/90 text-gray-800 dark:text-white rounded-full text-sm font-medium">
+                    <span className="px-3 py-1 bg-white/90 dark:bg-gray-800/90 text-gray-800 dark:text-white rounded-full text-sm font-medium">
                       {project.category}
                     </span>
                   </div>
@@ -201,23 +201,23 @@ const Projects = () => {
       </section>
 
       {/* Skills Summary */}
-      <section className="py-20 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
+      <section className="py-20 bg-white dark:bg-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12">
             What I Bring to Your Project
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="p-6 bg-white/80 dark:bg-slate-700/80 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+            <div className="p-6 bg-gray-50 dark:bg-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <ShoppingCart className="h-12 w-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">E-commerce Expertise</h3>
               <p className="text-gray-600 dark:text-gray-300">Specialized in Magento 2 development with deep understanding of e-commerce workflows</p>
             </div>
-            <div className="p-6 bg-white/80 dark:bg-slate-700/80 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+            <div className="p-6 bg-gray-50 dark:bg-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <Database className="h-12 w-12 text-purple-600 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Backend Development</h3>
               <p className="text-gray-600 dark:text-gray-300">Strong Laravel and PHP skills for building robust server-side applications</p>
             </div>
-            <div className="p-6 bg-white/80 dark:bg-slate-700/80 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+            <div className="p-6 bg-gray-50 dark:bg-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <Globe className="h-12 w-12 text-green-600 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Full-Stack Solutions</h3>
               <p className="text-gray-600 dark:text-gray-300">End-to-end development from frontend interfaces to backend architecture</p>
