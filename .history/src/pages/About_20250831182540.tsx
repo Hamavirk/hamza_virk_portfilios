@@ -42,9 +42,14 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
-              <div className="inline-flex items-center justify-center w-32 h-32 bg-white/10 backdrop-blur-sm rounded-full mb-6 animate-bounce">
-                <User className="h-16 w-16 text-white" />
-              </div>
+             <div className="inline-flex items-center justify-center w-32 h-32 bg-white/10 backdrop-blur-sm rounded-full mb-6 animate-bounce overflow-hidden">
+  <img 
+    src="/path/to/your-image.jpg" 
+    alt="profile" 
+    className="h-full w-full object-cover" 
+  />
+</div>
+
               <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up">
                  Hamza Virk
               </h1>

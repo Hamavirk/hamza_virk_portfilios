@@ -45,9 +45,7 @@ const About = () => {
               <div className="inline-flex items-center justify-center w-32 h-32 bg-white/10 backdrop-blur-sm rounded-full mb-6 animate-bounce">
                 <User className="h-16 w-16 text-white" />
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up">
-                 Hamza Virk
-              </h1>
+             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Hamza Virk" class="profile-img">
               <p className="text-xl md:text-2xl leading-relaxed animate-fade-in-up delay-200">
                 Passionate Web Developer with 1+ year of professional experience specializing in 
                 modern web technologies and e-commerce solutions.

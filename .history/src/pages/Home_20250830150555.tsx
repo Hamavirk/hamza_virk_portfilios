@@ -50,7 +50,7 @@ const Home = () => {
   return (
     <div className="pt-16">
       {/* Hero Section with Slider */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gray-900 dark:bg-black">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Background Slider */}
         <div className="absolute inset-0">
           {slides.map((slide, index) => (
@@ -130,7 +130,7 @@ const Home = () => {
       </section>
 
       {/* Skills Overview */}
-      <section className="py-20 bg-white dark:bg-gray-800">
+      <section className="py-20 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -145,7 +145,7 @@ const Home = () => {
             {skills.map((skill, index) => (
               <div
                 key={skill.name}
-                className="group p-6 bg-gray-50 dark:bg-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in-up"
+                className="group p-6 bg-white/80 dark:bg-slate-700/80 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="flex items-center space-x-3 mb-4">

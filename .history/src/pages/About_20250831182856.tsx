@@ -46,7 +46,7 @@ const About = () => {
                 <User className="h-16 w-16 text-white" />
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up">
-                 Hamza Virk
+                About Hamza Virk
               </h1>
               <p className="text-xl md:text-2xl leading-relaxed animate-fade-in-up delay-200">
                 Passionate Web Developer with 1+ year of professional experience specializing in 

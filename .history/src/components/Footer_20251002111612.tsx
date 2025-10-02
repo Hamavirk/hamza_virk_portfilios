@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-4 transform hover:scale-105 transition-transform duration-300">
+          <div className="space-y-4">
             <h3 className="text-lg font-semibold">Contact Information</h3>
             <div className="space-y-3">
               <a 
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
 
           {/* Company Info */}
-          <div className="space-y-4 transform hover:scale-105 transition-transform duration-300">
+          <div className="space-y-4">
             <h3 className="text-lg font-semibold">Current Company</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
