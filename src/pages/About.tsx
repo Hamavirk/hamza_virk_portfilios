@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, Briefcase, GraduationCap, Code, Globe, Database, Award, Target } from 'lucide-react';
+import { Briefcase, GraduationCap, Code, Globe, Database, Award, Target } from 'lucide-react';
 
 const About = () => {
   const experience = [
@@ -43,7 +43,11 @@ const About = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <div className="inline-flex items-center justify-center w-32 h-32 bg-white/10 backdrop-blur-sm rounded-full mb-6 animate-bounce">
-                <User className="h-16 w-16 text-white" />
+                <img
+                  src="/hamza.jpeg"
+                  alt="Hamza Virk"
+                  className="w-28 h-28 rounded-full object-cover border-4 border-white/40"
+                />
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up">
                  Hamza Virk
