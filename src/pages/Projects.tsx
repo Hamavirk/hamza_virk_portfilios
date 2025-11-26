@@ -56,6 +56,19 @@ const Projects = () => {
       status: "Live",
       features: ["Installment Pricing", "Payment Options", "Product Enhancement"],
       color: "from-orange-500 to-red-600"
+    },
+    {
+      id: 5,
+      title: "RxMeds Health Platform",
+      description: "High-converting Magento 2 storefront for prescription-grade wellness and anti-aging treatments.",
+      longDescription: "Designed and implemented the full RxMeds home page in Magento 2, focusing on a clean, trustworthy healthcare experience. Optimized category navigation, product highlights, testimonial sections, and trust badges to improve user confidence, engagement, and conversions for prescription-grade treatments and wellness products.",
+      technologies: ["Magento 2", "PHP", "JavaScript", "jQuery", "CSS3"],
+      url: "https://staging.rxmeds.is/",
+      image: "https://images.pexels.com/photos/6231671/pexels-photo-6231671.jpeg?auto=compress&cs=tinysrgb&w=800",
+      category: "Magento 2",
+      status: "Live",
+      features: ["Custom Home Page Design", "Healthcare-Focused UI/UX", "Product & Category Highlighting", "Conversion Optimization"],
+      color: "from-cyan-500 to-blue-600"
     }
   ];
 
