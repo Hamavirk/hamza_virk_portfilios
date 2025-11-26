@@ -44,7 +44,7 @@ const About = () => {
             <div className="mb-8">
               <div className="inline-flex items-center justify-center w-32 h-32 bg-white/10 backdrop-blur-sm rounded-full mb-6 animate-bounce">
                 <img
-                  src="/hamzavirk.png"
+                  src="/hamza.jpeg"
                   alt="Hamza Virk"
                   className="w-28 h-28 rounded-full object-cover border-4 border-white/40"
                 />
